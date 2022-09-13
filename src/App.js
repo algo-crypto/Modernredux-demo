@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Counter from "./features/counter/Counter.js";
+import "./index.css";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="App">
+      <h1>state managment with Modern redux </h1>
+      <p>
+        TakeAway : State managment with redux toolkit is easier why ?<br />{" "}
+        because we don't have to worry about mutating the state immer js library
+        will do that automatically for us behind the scene such a cool
+        abstraction.
+      </p>
+      <Counter />
+    </main>
   );
 }
 
